@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* General App Styling */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  padding: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 3rem;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Dog Image and Animation */
+.dog-container {
+  margin-bottom: 30px;
+}
+
+.dog {
+  width: 200px;
+  height: 200px;
+  animation: dogMove 5s infinite alternate;
+}
+
+.dog-confused {
+  animation: dogConfused 2s infinite;
+}
+
+@keyframes dogMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(20px); }
+}
+
+@keyframes dogConfused {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Homework Container */
+.homework-container {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+button.toggle-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.toggle-button:hover {
+  background-color: #ff4500;
+}
+
+/* Dog Thoughts */
+.dog-thoughts {
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 20px;
 }
