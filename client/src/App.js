@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import JobDashboard from './components/JobDashboard';  // Import the component correctly
 import AIAssistant from './components/AIAssistant';  // Import the component correctly
+import JobCard from './components/JobCard';
 
 function App() {
   return (
